@@ -29,11 +29,4 @@ app.use("/general", generalRoutes);
 app.use("management", managementRoutes);
 app.use("/sales", salesRoutes);
 
-/*Mongoose setup*/
-const PORT = process.env.PORT || 3000;
-mongoose.connect(process.env.MONGO_url{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-});.then(() => {
-    app.listen(PORT, () => console.log('server Port: ${PORT}'))
-}).catch((error) => console.log('${error} Sorry you are not connected'));
+/*Mongose setu*/
